@@ -4,6 +4,7 @@
 ```
 $ brew install lua
 $ luarocks install --local redis-lua
+$ luarocks install --local lua-cjson
 ```
 
 ### exec
