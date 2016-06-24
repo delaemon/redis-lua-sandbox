@@ -5,6 +5,7 @@
 $ brew install lua
 $ luarocks install --local redis-lua
 $ luarocks install --local lua-cjson
+$ luarocks install --local lua-cmsgpack
 $ luarocks install --local sha1
 ```
 
