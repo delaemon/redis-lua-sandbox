@@ -9,7 +9,7 @@ local params = {
 }
 
 local client = redis.connect(params)
-query = "return redis.call('set', KEYS[1], ARGV[1])"
+query = "return redis.pcall('set', KEYS[1], ARGV[1])"
 qs = sha1(query)
 client:eval(query, 1, 'key1', 'val1')
 client:evalsha(qs, 1, 'key2', 'val2')
